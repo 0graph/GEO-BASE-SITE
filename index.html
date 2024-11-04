@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEO BASE</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Include Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -26,40 +24,18 @@
     <main class="main-content">
         <h1>GEO BASE</h1>
         <p>Geomatics Tools for the rest of us</p>
-        
-        <!-- Card Component -->
-        <div class="blog-slider">
-            <div class="blog-slider__wrp swiper-wrapper">
-                <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img">
-                        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
-                    </div>
-                    <div class="blog-slider__content">
-                        <span class="blog-slider__code">26 December 2019</span>
-                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                        <a href="#" class="blog-slider__button">READ MORE</a>
-                    </div>
-                </div>
-                <!-- Additional slides can be added here -->
-            </div>
-            <div class="blog-slider__pagination"></div>
-        </div>
     </main>
 
-    <!-- Include Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.blog-slider', {
-            spaceBetween: 30,
-            effect: 'fade',
-            loop: true,
-            pagination: {
-                el: '.blog-slider__pagination',
-                clickable: true,
-            },
-        });
-    </script>
+    <div class="card" onclick="window.location.href='https://algonquin.geo-base.org';">
+        <div class="card-image">
+            <img src="assets/trek-demo.png" alt="Trek Image">
+        </div>
+        <div class="card-content">
+            <h2>Trek</h2>
+            <p>Algonquin Provincial Park Canoe Route Planner</p>
+        </div>
+    </div>
+
+    
 </body>
 </html>
