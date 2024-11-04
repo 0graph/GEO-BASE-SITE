@@ -11,8 +11,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f9;
+    background-color: #74EBD5;
+    background-image: linear-gradient(250deg, #74EBD5 0%, #9FACE6 100%);
     color: #333;
+    min-height: 100vh; /* Ensures the background covers the entire viewport */
 }
 
 /* Navigation Bar Styling */
@@ -62,4 +64,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    margin-top: 100px; /* Moves title and description downwards */
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+    color: #555;
+}
